@@ -1,0 +1,338 @@
+@charset "UTF-8";
+/*반응형 화면 크기*/
+/*반응형, 브라우저 크기가 767px 이하일때*/
+/*반응형, 브라우저 크기가 768이상, 1023px 이하일때*/
+/*반응형, 브라우저 크기가 1024px 이상일때*/
+section.culture_visual_main .culture_visual_pos {
+  height: 100%;
+  position: relative;
+}
+
+section.culture_visual_main .culture_visual_pos .culture_visual_overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+section.culture_visual_main .culture_visual_pos .culture_visual_img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.culture_visual_main .culture_visual_pos .culture_visual_txt {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+section.culture_visual_main .culture_visual_pos .culture_visual_txt p span {
+  font-size: 84px;
+  font-family: "NSG B";
+}
+
+section.culture_visual_main .culture_visual_pos .culture_visual_txt > span {
+  font-size: 20px;
+  font-family: "NSG M";
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  section.culture_visual_main .culture_visual_pos .culture_visual_txt p span {
+    font-size: 72px;
+  }
+}
+
+@media (max-width: 768px) {
+  section.culture_visual_main .culture_visual_pos .culture_visual_txt p span {
+    font-size: 36px;
+    display: block;
+  }
+}
+
+section.culture_con01 .con01_bg {
+  padding: 150px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+section.culture_con01 .con01_bg .container > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.culture_con01 .con01_bg .container > div .txt_box {
+  color: #fff;
+}
+
+section.culture_con01 .con01_bg .container > div .txt_box h3 {
+  font-family: "NSG B";
+  font-size: 56px;
+  line-height: 68px;
+}
+
+section.culture_con01 .con01_bg .container > div .txt_box p {
+  padding-top: 40px;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+section.culture_con01 .con01_bg .container > div .img_box img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  section.culture_con01 .con01_bg {
+    padding: 100px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  section.culture_con01 .con01_bg .container > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section.culture_con01 .con01_bg .container > div .txt_box {
+    color: #fff;
+  }
+  section.culture_con01 .con01_bg .container > div .txt_box h3 {
+    font-family: "NSG B";
+    font-size: 51px;
+    line-height: 63px;
+  }
+  section.culture_con01 .con01_bg .container > div .img_box {
+    margin-top: 80px;
+  }
+  section.culture_con01 .con01_bg .container > div .img_box img {
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  section.culture_con01 .con01_bg {
+    padding: 50px 70px;
+  }
+  section.culture_con01 .con01_bg .container > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.culture_con01 .con01_bg .container > div .txt_box h3 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  section.culture_con01 .con01_bg .container > div .txt_box p {
+    padding-top: 20px;
+  }
+  section.culture_con01 .con01_bg .container > div .img_box {
+    margin-top: 40px;
+  }
+}
+
+section.culture_con02 > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.culture_con02 > div > div {
+  width: 50%;
+}
+
+section.culture_con02 > div > div > div {
+  position: relative;
+}
+
+section.culture_con02 > div > div > div p {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  color: #fff;
+  font-size: 20px;
+  font-family: "NSG M";
+  line-height: 27px;
+  z-index: 10;
+}
+
+section.culture_con02 > div > div > div img {
+  width: 100%;
+  display: block;
+}
+
+section.culture_con02 > div > div > div .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+section.culture_con02 > div .left_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.culture_con02 > div .left_box div {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  section.culture_con02 > div {
+    display: block;
+  }
+  section.culture_con02 > div > div {
+    width: 100%;
+  }
+  section.culture_con02 > div .left_box {
+    display: block;
+  }
+  section.culture_con02 > div .left_box div {
+    width: 100%;
+  }
+}
+
+.section.culture_con03 {
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.section.culture_con03 .con03_bg {
+  padding: 150px 15px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.section.culture_con03 .con03_bg h2 {
+  font-family: "NSG B";
+  font-size: 56px;
+  line-height: 68px;
+}
+
+.section.culture_con03 .con03_bg .swiper {
+  margin-top: 80px;
+}
+
+.section.culture_con03 .con03_bg .swiper .swiper-wrapper {
+  height: 100%;
+  padding-bottom: 70px;
+}
+
+.section.culture_con03 .con03_bg .swiper .swiper-wrapper .swiper-slide {
+  background: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section.culture_con03 .con03_bg .swiper .swiper-wrapper .swiper-slide .txt_wrap {
+  border-radius: 10px;
+  background: #fff;
+}
+
+.section.culture_con03 .con03_bg .swiper .swiper-wrapper .swiper-slide .txt_wrap .txt_padding {
+  width: 100%;
+  padding: 60px 90px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.section.culture_con03 .con03_bg .swiper .swiper-wrapper .swiper-slide .txt_wrap .txt_padding > div p {
+  font-size: 14px;
+  color: #333;
+}
+
+.section.culture_con03 .con03_bg .swiper .swiper-wrapper .swiper-slide h4 {
+  margin-top: 40px;
+}
+
+.section.culture_con03 .con03_bg .swiper .swiper-wrapper .swiper-slide-active .txt_wrap {
+  background-color: #53575A;
+}
+
+.section.culture_con03 .con03_bg .swiper .swiper-wrapper .swiper-slide-active .txt_wrap .txt_padding > div p {
+  color: #fff;
+}
+
+.section.culture_con03 .con03_bg .swiper .swiper-pagination {
+  bottom: 0;
+}
+
+.section.culture_con03 .con03_bg .swiper .swiper-pagination .swiper-pagination-bullet {
+  width: 30px;
+  height: 4px;
+  background: rgba(83, 87, 90, 0.5);
+  border-radius: 0;
+}
+
+.section.culture_con03 .con03_bg .swiper .swiper-pagination .swiper-pagination-bullet-active {
+  background: #53575a;
+}
+
+@media (max-width: 768px) {
+  .section.culture_con03 {
+    text-align: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .section.culture_con03 .con03_bg {
+    padding: 50px 20px;
+  }
+  .section.culture_con03 .con03_bg h2 {
+    font-family: "NSG B";
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .section.culture_con03 .con03_bg .swiper {
+    margin-top: 40px;
+  }
+  .section.culture_con03 .con03_bg .swiper .swiper-wrapper {
+    padding-bottom: 50px;
+  }
+  .section.culture_con03 .con03_bg .swiper .swiper-wrapper .swiper-slide .txt_wrap .txt_padding {
+    padding: 60px 80px;
+  }
+  .section.culture_con03 .con03_bg .swiper .swiper-wrapper .swiper-slide h4 {
+    margin-top: 20px;
+  }
+  .section.culture_con03 .con03_bg .swiper .swiper-pagination {
+    bottom: 0;
+  }
+}
+/*# sourceMappingURL=culture.css.map */

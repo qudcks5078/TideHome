@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/*반응형 화면 크기*/
+/*반응형, 브라우저 크기가 767px 이하일때*/
+/*반응형, 브라우저 크기가 768이상, 1023px 이하일때*/
+/*반응형, 브라우저 크기가 1024px 이상일때*/
+section.project_visual_main .project_visual_pos {
+  height: 100%;
+  position: relative;
+}
+
+section.project_visual_main .project_visual_pos .project_visual_overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+section.project_visual_main .project_visual_pos .project_visual_img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.project_visual_main .project_visual_pos .project_visual_txt {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+section.project_visual_main .project_visual_pos .project_visual_txt p span {
+  font-size: 84px;
+  font-family: "NSG B";
+}
+
+section.project_visual_main .project_visual_pos .project_visual_txt > span {
+  font-size: 20px;
+  font-family: "NSG M";
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  section.project_visual_main .project_visual_pos .project_visual_txt p span {
+    font-size: 72px;
+  }
+}
+
+@media (max-width: 768px) {
+  section.project_visual_main .project_visual_pos .project_visual_txt p span {
+    font-size: 36px;
+    font-family: "NSG B";
+  }
+}
+
+.project_con01 .location_bg {
+  background-color: #383838;
+}
+
+.project_con01 .location_bg > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.project_con01 .location_bg > div > div {
+  width: 50%;
+}
+
+.project_con01 .location_bg > div .right_box {
+  padding: 130px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.project_con01 .location_bg > div .right_box > div {
+  color: #fff;
+}
+
+.project_con01 .location_bg > div .right_box > div h2 {
+  font-size: 56px;
+  font-family: "NSG B";
+  line-height: 68px;
+  padding-bottom: 10px;
+}
+
+.project_con01 .location_bg > div .right_box > div p {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.project_con01 .location_bg > div .right_box > div:nth-child(2) {
+  margin-top: 72px;
+}
+
+.project_con01 .location_bg > div .right_box > div:nth-child(2) p:first-child {
+  font-size: 20px;
+  font-family: "NSG M";
+  padding-bottom: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .project_con01 .location_bg > div .right_box {
+    padding: 100px;
+  }
+  .project_con01 .location_bg > div .right_box > div h2 {
+    font-size: 51px;
+    line-height: 63px;
+  }
+  .project_con01 .location_bg > div .right_box > div:nth-child(2) p:first-child {
+    font-size: 20px;
+    font-family: "NSG M";
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project_con01 .location_bg > div {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .project_con01 .location_bg > div .left_box #map {
+    min-height: 590px;
+  }
+  .project_con01 .location_bg > div .right_box {
+    padding: 50px;
+  }
+  .project_con01 .location_bg > div .right_box > div h2 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .project_con01 .location_bg > div .right_box > div:nth-child(2) {
+    margin-top: 36px;
+  }
+}
+/*# sourceMappingURL=project.css.map */

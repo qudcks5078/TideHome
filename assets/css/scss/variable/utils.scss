@@ -1,0 +1,36 @@
+// 색상
+$mainColor:#004693 !default;
+$subColor:#90D1E8 !default;
+
+// 폰트
+$mainColor:#fff !default;
+$bold:'NSG B';
+$medium:'NSG M';
+$Regular:'NSG R';
+$light:'NSG L';
+
+/*반응형 화면 크기*/
+$mobile: 768px;
+$tablet: 1199px;
+$desktop: 1200px;
+
+/*반응형, 브라우저 크기가 767px 이하일때*/
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}
+
+/*반응형, 브라우저 크기가 768이상, 1023px 이하일때*/
+@mixin tablet {
+    @media (min-width: $mobile) and (max-width: $tablet) {
+        @content;
+    }
+}
+
+/*반응형, 브라우저 크기가 1024px 이상일때*/
+@mixin desktop {
+    @media (min-width: $desktop) {
+        @content;
+    }
+}
