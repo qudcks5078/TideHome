@@ -11,8 +11,8 @@ input{box-sizing:border-box;}
 input[type=text], input[type=password] {border:none; height: 40px; font-size: 16px; vertical-align: top; font-family: 'NSG R' !important;}
 textarea {width:100%; border:none; font-size: 16px; font-family: 'NSG R' !important; outline: none; resize: none; line-height: 24px; border-radius: 5px; min-height: 100px;}
 
-a {text-decoration: none; color:#000;}
-a, span {display:inline-block;}
+a {text-decoration: none; color:#000; display: inline-block;}
+a, span{display:inline-block;}
 p {margin:0; padding:0;}
 a, span, p {word-break: break-all;}
 a, button, span, input, ul, li, div {-webkit-tap-highlight-color : transparent; }

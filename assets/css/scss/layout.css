@@ -250,6 +250,10 @@ footer .footer_wrap {
   z-index: 100;
 }
 
+footer .footer_wrap .footer_cont {
+  padding: 0 15px;
+}
+
 footer .footer_wrap .footer_cont .footer_desc {
   color: #fff;
   z-index: 10;

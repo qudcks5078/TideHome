@@ -5,19 +5,19 @@ $(document).ready(function () {
 
             $('.section.visual_main .swiper-slide').each(function (index) {
                 let imgSrc = 'assets/img/layout/main/slide_';
-                if (ww < 640) {
-                    $(this).find('img').attr('src', imgSrc + index + '_mobile.jpg');
+                if (ww < 767) {
+                    $(this).find('img').attr('src', imgSrc + (index + 1) + '_mobile.jpg');
                 }else{
-                    $(this).find('img').attr('src', imgSrc + index + '.jpg');
+                    $(this).find('img').attr('src', imgSrc + (index + 1) + '.jpg');
                 }
             })
 
             $('.section.own_work .swiper-slide').each(function (index) {
                 let imgSrc = 'assets/img/layout/main/own_work';
-                if (ww < 640) {
-                    $(this).find('img').attr('src', imgSrc + index + '_mobile.jpg');
+                if (ww < 767) {
+                    $(this).find('img').attr('src', imgSrc + (index + 1) + '_mobile.jpg');
                 }else{
-                    $(this).find('img').attr('src', imgSrc + index + '.jpg');
+                    $(this).find('img').attr('src', imgSrc + (index + 1) + '.jpg');
                 }
             })
     }).resize();

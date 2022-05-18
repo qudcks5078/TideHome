@@ -145,7 +145,7 @@ header {
 
                     a {
                         position: relative;
-                        font-size: 3rem;
+                        font-size: 46px;
                         color: #fff;
                         font-family: $bold;
                         opacity: 0.4;
@@ -268,6 +268,7 @@ footer {
 
 
         .footer_cont {
+            padding:0 15px;
             .footer_desc {
                 color: #fff;
                 z-index: 10;

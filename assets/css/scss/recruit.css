@@ -37,8 +37,9 @@
 }
 
 .section.recruit_visual_main .recruit_visual_pos .recruit_visual_txt p span {
-  font-size: 84px;
+  font-size: 72px;
   font-family: "NSG B";
+  display: inline;
 }
 
 .section.recruit_visual_main .recruit_visual_pos .recruit_visual_txt > span {
@@ -48,7 +49,7 @@
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .section.recruit_visual_main .recruit_visual_pos .recruit_visual_txt p span {
-    font-size: 72px;
+    font-size: 48px;
   }
 }
 
@@ -69,7 +70,7 @@
 
 .section.recruit_con01 .container .con01_wrap h2 {
   font-family: "NSG B";
-  font-size: 56px;
+  font-size: 48px;
 }
 
 .section.recruit_con01 .container .con01_wrap p {
@@ -117,10 +118,10 @@
           box-shadow: 2px 6px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
-.section.recruit_con01 .container .con01_wrap .column ul li:nth-child(1)::after, .section.recruit_con01 .container .con01_wrap .column ul li:nth-child(2)::after, .section.recruit_con01 .container .con01_wrap .column ul li:nth-child(3)::after {
-  content: '';
+.section.recruit_con01 .container .con01_wrap .column ul li:nth-child(1) > span,
+.section.recruit_con01 .container .con01_wrap .column ul li:nth-child(2) > span,
+.section.recruit_con01 .container .con01_wrap .column ul li:nth-child(3) > span {
   position: absolute;
-  left: calc(100% + 50px);
   width: 29px;
   height: 41px;
   background-image: url("../../img/common/icon/next_ico.png");
@@ -166,14 +167,16 @@
     padding: 100px 0;
   }
   .section.recruit_con01 .container .con01_wrap h2 {
-    font-size: 51px;
+    font-size: 48px;
   }
   .section.recruit_con01 .container .con01_wrap .column ul li {
     padding: 20px;
     width: 200px;
     height: 200px;
   }
-  .section.recruit_con01 .container .con01_wrap .column ul li:nth-child(1)::after, .section.recruit_con01 .container .con01_wrap .column ul li:nth-child(2)::after, .section.recruit_con01 .container .con01_wrap .column ul li:nth-child(3)::after {
+  .section.recruit_con01 .container .con01_wrap .column ul li:nth-child(1) > span,
+  .section.recruit_con01 .container .con01_wrap .column ul li:nth-child(2) > span,
+  .section.recruit_con01 .container .con01_wrap .column ul li:nth-child(3) > span {
     width: 22px;
     height: 30px;
   }
@@ -184,7 +187,7 @@
     padding: 50px 0;
   }
   .section.recruit_con01 .container .con01_wrap h2 {
-    font-size: 26px;
+    font-size: 28px;
   }
   .section.recruit_con01 .container .con01_wrap p {
     padding-top: 20px;
@@ -208,10 +211,11 @@
   .section.recruit_con01 .container .con01_wrap .column ul li:last-child {
     margin-bottom: 0;
   }
-  .section.recruit_con01 .container .con01_wrap .column ul li:nth-child(1)::after, .section.recruit_con01 .container .con01_wrap .column ul li:nth-child(2)::after, .section.recruit_con01 .container .con01_wrap .column ul li:nth-child(3)::after {
+  .section.recruit_con01 .container .con01_wrap .column ul li:nth-child(1) > span,
+  .section.recruit_con01 .container .con01_wrap .column ul li:nth-child(2) > span,
+  .section.recruit_con01 .container .con01_wrap .column ul li:nth-child(3) > span {
     -webkit-transform: rotate(90deg) translate(-50%, -50%);
             transform: rotate(90deg) translate(-50%, -50%);
-    left: calc(50% - 21px);
     top: calc(100% + 30px);
     width: 21px;
     height: 30px;
@@ -261,7 +265,7 @@
   display: inline;
   position: relative;
   font-family: "NSG B";
-  font-size: 56px;
+  font-size: 48px;
   color: #fff;
 }
 
@@ -334,7 +338,7 @@
     padding: 100px 85px;
   }
   .section.recruit_con02 .con02_bg h2 {
-    font-size: 51px;
+    font-size: 48px;
   }
   .section.recruit_con02 .con02_bg h2:after {
     width: 47px;
@@ -364,7 +368,7 @@
     display: inline-block;
     position: relative;
     font-family: "NSG B";
-    font-size: 26px;
+    font-size: 28px;
     color: #fff;
     text-align: left;
   }
@@ -429,6 +433,7 @@
 }
 
 .section.recruit_con04 .con04_bg .swiper .swiper-wrapper .swiper-slide {
+  height: 530px;
   text-align: center;
   font-size: 18px;
   /* Center slide text vertically */
@@ -464,7 +469,7 @@
 }
 
 .section.recruit_con04 .con04_bg .swiper .swiper-wrapper .swiper-slide .bg_box .txt_box h3 {
-  font-size: 32px;
+  font-size: 28px;
   font-family: "NSG M";
   letter-spacing: -0.2px;
 }
@@ -494,7 +499,7 @@
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .section.recruit_con04 .con04_bg {
-    padding: 75px;
+    padding: 25px;
   }
   .section.recruit_con04 .con04_bg .swiper {
     padding-bottom: 0px;
@@ -515,7 +520,7 @@
 
 @media (max-width: 768px) {
   .section.recruit_con04 .con04_bg {
-    padding: 100px 50px;
+    padding: 50px 25px;
   }
   .section.recruit_con04 .con04_bg .swiper {
     padding-bottom: 0;
@@ -525,9 +530,10 @@
         flex-wrap: wrap;
   }
   .section.recruit_con04 .con04_bg .swiper .swiper-wrapper .swiper-slide:not(:first-child) {
-    margin-top: 40px;
+    margin-top: 20px;
   }
   .section.recruit_con04 .con04_bg .swiper .swiper-wrapper .swiper-slide .bg_box .txt_box p {
+    padding-top: 30px;
     line-height: 32px;
   }
   .section.recruit_con04 .con04_bg .swiper .swiper-pagination {
@@ -544,7 +550,7 @@
 }
 
 .section.recruit_con05 .container .con05_wrap .txt_box h2 {
-  font-size: 56px;
+  font-size: 48px;
   font-family: "NSG B";
 }
 
@@ -561,7 +567,7 @@
     text-align: center;
   }
   .section.recruit_con05 .container .con05_wrap .txt_box h2 {
-    font-size: 56px;
+    font-size: 48px;
     font-family: "NSG B";
   }
   .section.recruit_con05 .container .con05_wrap .txt_box h2 span {

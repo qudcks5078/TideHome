@@ -55,8 +55,9 @@
 
                         p {
                             span{
-                                font-size: 84px;
+                                font-size: 72px;
                                 font-family: $bold;
+                                display: inline;
                             }
                         }
 
@@ -232,7 +233,7 @@
     
                             p {
                                 span{
-                                    font-size: 72px;
+                                    font-size: 48px;
                                     font-family: $bold;
                                     &:nth-child(3){
                                         display:block;
@@ -539,7 +540,7 @@ section.contact {
                 width: 50%;
 
                 h3 {
-                    font-size: 56px;
+                    font-size: 48px;
                     font-family: $bold;
                     margin: 0;
                 }
@@ -630,7 +631,7 @@ section.contact {
                     width: 100%;
     
                     h3 {
-                        font-size: 51px;
+                        font-size: 48px;
                         font-family: $bold;
                         margin: 0;
                     }
@@ -723,7 +724,7 @@ section.contact {
                 div {
                     width: 100%;
                     h3 {
-                        font-size: 26px;
+                        font-size: 28px;
                         font-family: $bold;
                         margin: 0;
                     }
@@ -844,13 +845,13 @@ section.contact {
                     .desc {
                         z-index: 10;
                         position: absolute;
-                        bottom: 40px;
-                        left: 40px;
+                        bottom: 20px;
+                        left: 20px;
                         color: #fff;
 
                         span {
                             font-family: $bold;
-                            font-size: 24px;
+                            font-size: 18px;
                         }
                     }
 
@@ -927,14 +928,7 @@ section.contact {
                         }
     
                         .desc {
-                            z-index: 10;
-                            position: absolute;
-                            bottom: 40px;
-                            left: 30px;
-                            right: 30px;
-                            color: #fff;
                             text-align: left;
-    
                             span {
                                 font-family: $bold;
                                 font-size: 16px;
@@ -942,32 +936,6 @@ section.contact {
                         }
     
                     }
-    
-                    a:hover {
-                        background-size: auto 110%;
-                    }
-                }
-            }
-    
-            .first_box {
-                >div {
-                    &:nth-child(1) {
-                        flex: 1;
-                    }
-    
-                    &:nth-child(2) {
-                        flex: 2;
-                    }
-    
-                    &:nth-child(3) {
-                        flex: 1;
-                    }
-                }
-            }
-    
-            .second_box {
-                >div {
-                    width: 50%;
                 }
             }
         }
@@ -999,7 +967,7 @@ section.contact {
                         height: 250px;
                         text-align: center;
                         background-position: center;
-                        background-size: 100% 100%;
+                        background-size: cover;
                         background-repeat: no-repeat;
                         transition: all 1.5s cubic-bezier(0.23, 1, 0.320, 1);
     
@@ -1013,12 +981,6 @@ section.contact {
                         }
     
                         .desc {
-                            z-index: 10;
-                            position: absolute;
-                            bottom: 30px;
-                            left: 30px;
-                            color: #fff;
-    
                             span {
                                 font-family: $bold;
                                 font-size: 16px;
@@ -1028,23 +990,7 @@ section.contact {
                     }
     
                     a:hover {
-                        background-size: 110% 110%;
-                    }
-                }
-            }
-    
-            .first_box {
-                >div {
-                    &:nth-child(1) {
-                        flex: 1;
-                    }
-    
-                    &:nth-child(2) {
-                        flex: 2;
-                    }
-    
-                    &:nth-child(3) {
-                        flex: 1;
+                        background-size: cover;
                     }
                 }
             }
@@ -1313,7 +1259,7 @@ section.contact {
             text-align: center;
 
             h2 {
-                font-size: 56px;
+                font-size: 48px;
                 font-family: $bold;
                 margin: 0;
                 padding-bottom: 80px;
@@ -1357,7 +1303,7 @@ section.contact {
                 text-align: center;
     
                 h2 {
-                    font-size: 56px;
+                    font-size: 48px;
                     font-family: $bold;
                     margin: 0;
                     padding-bottom: 80px;

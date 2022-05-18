@@ -34,3 +34,10 @@ $desktop: 1200px;
         @content;
     }
 }
+
+@mixin title_txt {
+    font-size: 48px;
+    font-family: $bold;
+    margin: 0;
+    padding-bottom: 80px;
+}

@@ -34,8 +34,9 @@
 
             p {
                 span {
-                    font-size: 84px;
+                    font-size: 72px;
                     font-family: $bold;
+                    display: inline;
                 }
             }
 
@@ -53,7 +54,7 @@
             .recruit_visual_txt {
                 p {
                     span {
-                        font-size: 72px;
+                        font-size: 48px;
                     }
                 }
             }
@@ -85,7 +86,7 @@
 
             h2 {
                 font-family: $bold;
-                font-size: 56px;
+                font-size: 48px;
             }
 
             p {
@@ -115,12 +116,11 @@
                         box-sizing: border-box;
                         box-shadow: 2px 6px 10px 0px rgba(0, 0, 0, .2);
 
-                        &:nth-child(1)::after,
-                        &:nth-child(2)::after,
-                        &:nth-child(3)::after {
-                            content: '';
+                        &:nth-child(1) > span,
+                        &:nth-child(2) > span,
+                        &:nth-child(3) > span {
                             position: absolute;
-                            left: calc(100% + 50px);
+                            // left: calc(100% + 50px);
                             width: 29px;
                             height: 41px;
                             background-image: url('../../img/common/icon/next_ico.png');
@@ -172,7 +172,7 @@
         .container {
             .con01_wrap {
                 h2 {
-                    font-size: 51px;
+                    font-size: 48px;
                 }
 
                 .column {
@@ -182,9 +182,9 @@
                             width: 200px;
                             height: 200px;
 
-                            &:nth-child(1)::after,
-                            &:nth-child(2)::after,
-                            &:nth-child(3)::after {
+                            &:nth-child(1) > span,
+                            &:nth-child(2) > span,
+                            &:nth-child(3) > span {
                                 width: 22px;
                                 height: 30px;
                             }
@@ -203,7 +203,7 @@
         .container {
             .con01_wrap {
                 h2 {
-                    font-size: 26px;
+                    font-size: 28px;
                 }
 
                 p {
@@ -230,11 +230,11 @@
                                 margin-bottom:0;
                             }
 
-                            &:nth-child(1)::after,
-                            &:nth-child(2)::after,
-                            &:nth-child(3)::after {
+                            &:nth-child(1) > span,
+                            &:nth-child(2) > span,
+                            &:nth-child(3) > span {
                                 transform: rotate(90deg) translate(-50%, -50%);
-                                left: calc(50% - 21px);
+                                // left: calc(50% - 21px);
                                 top: calc(100% + 30px);
                                 width: 21px;
                                 height: 30px;
@@ -284,7 +284,7 @@
             display: inline;
             position: relative;
             font-family: $bold;
-            font-size: 56px;
+            font-size: 48px;
             color: #fff;
 
             &:after {
@@ -365,7 +365,7 @@
         .con02_bg {
             padding: 100px 85px;
             h2 {
-                font-size: 51px;
+                font-size: 48px;
                 &:after {
                     width: 47px;
                     height: 60px;
@@ -411,7 +411,7 @@
                 display: inline-block;
                 position: relative;
                 font-family: $bold;
-                font-size: 26px;
+                font-size: 28px;
                 color: #fff;
                 text-align: left;
                 span{
@@ -486,7 +486,7 @@
 
             .swiper-wrapper {
                 .swiper-slide {
-                    // height:530px;
+                    height:530px;
                     text-align: center;
                     font-size: 18px;
                     /* Center slide text vertically */
@@ -521,7 +521,7 @@
                             z-index: 10;
 
                             h3 {
-                                font-size: 32px;
+                                font-size: 28px;
                                 font-family: $medium;
                                 letter-spacing: -0.2px;
                             }
@@ -561,7 +561,7 @@
 @include tablet {
     .section.recruit_con04 {
         .con04_bg {
-            padding: 75px;
+            padding: 25px;
             .swiper {
                 padding-bottom: 0px;
                 .swiper-wrapper {
@@ -583,7 +583,7 @@
 @include mobile {
     .section.recruit_con04 {
         .con04_bg {
-            padding: 100px 50px;
+            padding: 50px 25px;
             .swiper {
                 padding-bottom: 0;
     
@@ -591,11 +591,12 @@
                     flex-wrap: wrap;
                     .swiper-slide {
                         &:not(:first-child){
-                            margin-top:40px;
+                            margin-top:20px;
                         }
                         .bg_box {
                             .txt_box {
                                 p {
+                                    padding-top: 30px;
                                     line-height: 32px;
                                 }
                             }
@@ -619,7 +620,7 @@
                 text-align: center;
 
                 h2 {
-                    font-size: 56px;
+                    font-size: 48px;
                     font-family: $bold;
                 }
 
@@ -642,7 +643,7 @@
                     text-align: center;
     
                     h2 {
-                        font-size: 56px;
+                        font-size: 48px;
                         font-family: $bold;
                         span{
                             display:block;

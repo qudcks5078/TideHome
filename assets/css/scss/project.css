@@ -37,8 +37,9 @@ section.project_visual_main .project_visual_pos .project_visual_txt {
 }
 
 section.project_visual_main .project_visual_pos .project_visual_txt p span {
-  font-size: 84px;
+  font-size: 72px;
   font-family: "NSG B";
+  display: inline;
 }
 
 section.project_visual_main .project_visual_pos .project_visual_txt > span {
@@ -48,7 +49,7 @@ section.project_visual_main .project_visual_pos .project_visual_txt > span {
 
 @media (min-width: 768px) and (max-width: 1199px) {
   section.project_visual_main .project_visual_pos .project_visual_txt p span {
-    font-size: 72px;
+    font-size: 48px;
   }
 }
 
@@ -56,6 +57,7 @@ section.project_visual_main .project_visual_pos .project_visual_txt > span {
   section.project_visual_main .project_visual_pos .project_visual_txt p span {
     font-size: 36px;
     font-family: "NSG B";
+    display: block;
   }
 }
 
@@ -125,11 +127,14 @@ section.project_visual_main .project_visual_pos .project_visual_txt > span {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .project_con01 .location_bg > div > div {
+    width: 100%;
+  }
   .project_con01 .location_bg > div .left_box #map {
     min-height: 590px;
   }
   .project_con01 .location_bg > div .right_box {
-    padding: 50px;
+    padding: 50px 15px;
   }
   .project_con01 .location_bg > div .right_box > div h2 {
     font-size: 26px;
