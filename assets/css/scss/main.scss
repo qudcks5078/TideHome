@@ -24,7 +24,8 @@
                 align-items: center;
 
                 .slide_pos {
-                    height:100%;
+                    width:100%;
+                    height: 100%;
                     position: relative;
 
                     .slide_overlay {
@@ -54,14 +55,14 @@
                         color: #fff;
 
                         p {
-                            span{
+                            span {
                                 font-size: 72px;
                                 font-family: $bold;
                                 display: inline;
                             }
                         }
 
-                        > span {
+                        >span {
                             font-size: 20px;
                             font-family: $medium;
                         }
@@ -172,21 +173,21 @@
     }
 }
 
-@include tablet{
+@include tablet {
     .visual_main {
         height: auto;
-    
+
         .swiper {
             height: auto;
-    
+
             .swiper-wrapper {
                 height: auto;
                 overflow: hidden;
-    
+
                 .swiper-slide {
-                    height:auto;
+                    height: auto;
                     text-align: center;
-    
+
                     /* Center slide text vertically */
                     display: -webkit-box;
                     display: -ms-flexbox;
@@ -200,11 +201,11 @@
                     -ms-flex-align: center;
                     -webkit-align-items: center;
                     align-items: center;
-    
+
                     .slide_pos {
                         height: 100%;
                         position: relative;
-    
+
                         .slide_overlay {
                             position: absolute;
                             top: 0;
@@ -213,7 +214,7 @@
                             left: 0;
                             background: rgba(0, 0, 0, .4);
                         }
-    
+
                         .slide_img {
                             img {
                                 display: block;
@@ -222,7 +223,7 @@
                                 object-fit: cover;
                             }
                         }
-    
+
                         .slide_txt {
                             width: 100%;
                             position: absolute;
@@ -230,18 +231,19 @@
                             left: 50%;
                             transform: translate(-50%, -50%);
                             color: #fff;
-    
+
                             p {
-                                span{
+                                span {
                                     font-size: 48px;
                                     font-family: $bold;
-                                    &:nth-child(3){
-                                        display:block;
+
+                                    &:nth-child(3) {
+                                        display: block;
                                     }
                                 }
                             }
-    
-                            > span {
+
+                            >span {
                                 font-size: 20px;
                                 font-family: $medium;
                             }
@@ -249,22 +251,22 @@
                     }
                 }
             }
-    
+
             .swiper_button_wrap {
                 width: 100%;
                 margin: 0 auto;
                 position: absolute;
                 bottom: 26px;
-                left:30px;
+                left: 30px;
                 z-index: 50;
-    
+
                 .swiper_button {
                     width: 1400px;
                     margin: 0 auto;
                     display: flex;
-    
-    
-    
+
+
+
                     .swiper-button-next,
                     .swiper-button-prev {
                         position: unset;
@@ -272,14 +274,14 @@
                         height: 44px;
                         border: 1px solid #fff;
                         border-radius: 50%;
-    
-    
+
+
                         &:after {
                             font-size: 12px;
                             color: #fff;
-    
+
                         }
-    
+
                         &::before {
                             content: '';
                             position: absolute;
@@ -289,41 +291,41 @@
                             width: 14px;
                             margin-top: -1px;
                             transform: scaleX(0) translateX(0px);
-    
+
                         }
                     }
-    
+
                     .swiper-button-prev {
                         margin-right: 8px;
                     }
-    
+
                     .swiper-button-next:hover {
                         &::after {
                             padding-left: 10px;
                         }
                     }
-    
+
                     .swiper-button-prev:hover {
                         &::after {
                             padding-right: 10px;
                         }
                     }
-    
+
                     .swiper-button-next:hover,
                     .swiper-button-prev:hover {
                         &::after {
                             transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
                         }
-    
+
                         &::before {
                             transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
                             transform: scaleX(1) translateX(0px);
                         }
                     }
                 }
-    
+
             }
-    
+
             .swiper-pagination {
                 top: 50%;
                 right: 40px;
@@ -331,7 +333,7 @@
                 left: unset;
                 transform: translateY(-50%);
                 width: auto;
-    
+
                 .swiper-pagination-bullet {
                     display: block;
                     width: 6px;
@@ -339,12 +341,12 @@
                     background-color: #c4c4c4;
                     margin: 0;
                     margin-top: 10px;
-    
+
                     &:nth-child(1) {
                         margin-top: 0;
                     }
                 }
-    
+
                 .swiper-pagination-bullet-active {
                     background: none;
                     outline: 2px solid #fff;
@@ -354,16 +356,15 @@
     }
 }
 
-@include mobile{
+@include mobile {
     .visual_main {
         .swiper {
-    
             .swiper-wrapper {
                 overflow: hidden;
-    
+
                 .swiper-slide {
                     text-align: center;
-    
+
                     /* Center slide text vertically */
                     display: -webkit-box;
                     display: -ms-flexbox;
@@ -377,11 +378,11 @@
                     -ms-flex-align: center;
                     -webkit-align-items: center;
                     align-items: center;
-    
+
                     .slide_pos {
-                        height:100%;
+                        height: 100%;
                         position: relative;
-    
+
                         .slide_overlay {
                             position: absolute;
                             top: 0;
@@ -390,7 +391,7 @@
                             left: 0;
                             background: rgba(0, 0, 0, .4);
                         }
-    
+
                         .slide_img {
                             img {
                                 display: block;
@@ -399,7 +400,7 @@
                                 object-fit: cover;
                             }
                         }
-    
+
                         .slide_txt {
                             width: 100%;
                             position: absolute;
@@ -407,16 +408,16 @@
                             left: 50%;
                             transform: translate(-50%, -50%);
                             color: #fff;
-    
+
                             p {
-                                span{
-                                    display:block;
+                                span {
+                                    display: block;
                                     font-size: 36px;
                                     font-family: $bold;
                                 }
                             }
-    
-                            > span {
+
+                            >span {
                                 font-size: 20px;
                                 font-family: $medium;
                             }
@@ -424,21 +425,22 @@
                     }
                 }
             }
-    
+
             .swiper_button_wrap {
                 width: 100%;
                 margin: 0 auto;
                 position: absolute;
-                bottom: 26px;
+                bottom: 20px;
+                left:20px;
                 z-index: 50;
-    
+
                 .swiper_button {
                     width: 1400px;
                     margin: 0 auto;
                     display: flex;
-    
-    
-    
+
+
+
                     .swiper-button-next,
                     .swiper-button-prev {
                         position: unset;
@@ -446,14 +448,14 @@
                         height: 44px;
                         border: 1px solid #fff;
                         border-radius: 50%;
-    
-    
+
+
                         &:after {
                             font-size: 12px;
                             color: #fff;
-    
+
                         }
-    
+
                         &::before {
                             content: '';
                             position: absolute;
@@ -463,41 +465,41 @@
                             width: 14px;
                             margin-top: -1px;
                             transform: scaleX(0) translateX(0px);
-    
+
                         }
                     }
-    
+
                     .swiper-button-prev {
                         margin-right: 8px;
                     }
-    
+
                     .swiper-button-next:hover {
                         &::after {
                             padding-left: 10px;
                         }
                     }
-    
+
                     .swiper-button-prev:hover {
                         &::after {
                             padding-right: 10px;
                         }
                     }
-    
+
                     .swiper-button-next:hover,
                     .swiper-button-prev:hover {
                         &::after {
                             transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
                         }
-    
+
                         &::before {
                             transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
                             transform: scaleX(1) translateX(0px);
                         }
                     }
                 }
-    
+
             }
-    
+
             .swiper-pagination {
                 top: 50%;
                 right: 40px;
@@ -505,7 +507,7 @@
                 left: unset;
                 transform: translateY(-50%);
                 width: auto;
-    
+
                 .swiper-pagination-bullet {
                     display: block;
                     width: 6px;
@@ -513,12 +515,12 @@
                     background-color: #c4c4c4;
                     margin: 0;
                     margin-top: 10px;
-    
+
                     &:nth-child(1) {
                         margin-top: 0;
                     }
                 }
-    
+
                 .swiper-pagination-bullet-active {
                     background: none;
                     outline: 2px solid #fff;
@@ -1031,8 +1033,25 @@ section.contact {
                 -webkit-align-items: center;
                 align-items: center;
 
-                .slide_pos {
+                &:nth-child(1) .slide_bg {
+                    background-image: url('../../img/layout/main/own_work1.jpg');
+                }
+
+                &:nth-child(2) .slide_bg {
+                    background-image: url('../../img/layout/main/own_work2.jpg');
+                }
+
+                &:nth-child(3) .slide_bg {
+                    background-image: url('../../img/layout/main/own_work3.jpg');
+                }
+
+                .slide_bg {
+                    width: 100%;
+                    height: 800px;
                     position: relative;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
 
                     .slide_overlay {
                         position: absolute;
@@ -1043,12 +1062,39 @@ section.contact {
                         background: linear-gradient(to top, rgba(0, 0, 0, .3), rgba(255, 255, 255, 0));
                     }
 
-                    .slide_img {
-                        img {
-                            display: block;
-                            width: 100%;
-                            height: 100%;
-                            object-fit: cover;
+                    .container {
+                        height:100%;
+                        position: absolute;
+                        left:0; right:0;
+                        padding:0 100px;
+                        .slide_con {
+                            height:100%;
+                            display:flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            > div{
+
+                            }
+                            .txt_box {
+                                color: #fff;
+                                text-align: left;
+
+                                span {
+                                    font-size: 33px;
+                                }
+
+                                h3 {
+                                    font-family: $bold;
+                                    font-size: 94px;
+                                }
+                            }
+
+                            .img_box {
+                                img {
+                                    display: block;
+                                    max-height: 400px;
+                                }
+                            }
                         }
                     }
 
@@ -1086,51 +1132,36 @@ section.contact {
     }
 }
 
-@include tablet{
+@include tablet {
     .section.own_work {
         .swiper {
-            width: 100%;
-            height: 100%;
-    
             .swiper-wrapper {
-                height: 100%;
-                overflow: hidden;
-    
                 .swiper-slide {
-                    text-align: center;
+                    .slide_bg {
+                        height: 500px;
+                        .container {
+                            padding:0 100px;
+                            .slide_con {
+                                > div{
     
-                    /* Center slide text vertically */
-                    display: -webkit-box;
-                    display: -ms-flexbox;
-                    display: -webkit-flex;
-                    display: flex;
-                    -webkit-box-pack: center;
-                    -ms-flex-pack: center;
-                    -webkit-justify-content: center;
-                    justify-content: center;
-                    -webkit-box-align: center;
-                    -ms-flex-align: center;
-                    -webkit-align-items: center;
-                    align-items: center;
+                                }
+                                .txt_box {
+                                    span {
+                                        font-size: 20px;
+                                    }
     
-                    .slide_pos {
-                        position: relative;
+                                    h3 {
+                                        font-family: $bold;
+                                        font-size: 48px;
+                                    }
+                                }
     
-                        .slide_overlay {
-                            position: absolute;
-                            top: 0;
-                            right: 0;
-                            bottom: 0;
-                            left: 0;
-                            background: linear-gradient(to top, rgba(0, 0, 0, .3), rgba(255, 255, 255, 0));
-                        }
-    
-                        .slide_img {
-                            img {
-                                display: block;
-                                width: 100%;
-                                height: 100%;
-                                object-fit: cover;
+                                .img_box {
+                                    img {
+                                        display: block;
+                                        max-height: 240px;
+                                    }
+                                }
                             }
                         }
     
@@ -1169,64 +1200,52 @@ section.contact {
     }
 }
 
-@include mobile{
+@include mobile {
     .section.own_work {
         .swiper {
-            width: 100%;
-            height: 100%;
-    
             .swiper-wrapper {
-                height: 100%;
-                overflow: hidden;
-    
                 .swiper-slide {
-                    text-align: center;
+                    &:nth-child(1) .slide_bg {
+                        background-image: url('../../img/layout/main/own_work1_mobile.jpg');
+                    }
     
-                    /* Center slide text vertically */
-                    display: -webkit-box;
-                    display: -ms-flexbox;
-                    display: -webkit-flex;
-                    display: flex;
-                    -webkit-box-pack: center;
-                    -ms-flex-pack: center;
-                    -webkit-justify-content: center;
-                    justify-content: center;
-                    -webkit-box-align: center;
-                    -ms-flex-align: center;
-                    -webkit-align-items: center;
-                    align-items: center;
+                    &:nth-child(2) .slide_bg {
+                        background-image: url('../../img/layout/main/own_work2_mobile.jpg');
+                    }
     
-                    .slide_pos {
-                        position: relative;
+                    &:nth-child(3) .slide_bg {
+                        background-image: url('../../img/layout/main/own_work3_mobile.jpg');
+                    }
     
-                        .slide_overlay {
-                            position: absolute;
-                            top: 0;
-                            right: 0;
-                            bottom: 0;
-                            left: 0;
-                            background: linear-gradient(to top, rgba(0, 0, 0, .3), rgba(255, 255, 255, 0));
-                        }
+                    .slide_bg {
+                        height: 250px;
+                        .container {
+                            padding:0 50px;
+                            .slide_con {
+                                > div{
+                                    width:50%;
+                                }
+                                .txt_box {
+                                    span {
+                                        font-size: 14px;
+                                    }
     
-                        .slide_img {
-                            img {
-                                display: block;
-                                width: 100%;
-                                height: 100%;
-                                object-fit: cover;
+                                    h3 {
+                                        font-size: 28px;
+                                        line-height: 30px;
+                                    }
+                                }
+                                .img_box {
+                                    img {
+                                        max-width: 180px;
+                                        height:auto;
+                                        margin-left: auto;
+                                    }
+                                }
                             }
                         }
-    
                         .slide_desc {
-                            position: absolute;
-                            left: 40px;
-                            bottom: 40px;
-                            color: #fff;
-    
-                            span {
-                                font-size: 20px;
-                                font-family: $medium;
-                            }
+                            display:none;
                         }
                     }
                 }
@@ -1235,17 +1254,16 @@ section.contact {
             .swiper-button-next,
             .swiper-button-prev {
                 &:after {
-                    font-size: 40px;
-                    color: #fff;
+                    font-size: 20px;
                 }
             }
     
             .swiper-button-prev {
-                left: 40px;
+                left: 15px;
             }
     
             .swiper-button-next {
-                right: 40px;
+                right: 15px;
             }
     
         }

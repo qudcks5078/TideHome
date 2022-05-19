@@ -2,14 +2,15 @@ $(document).ready(function () {
 
     function resizeCircle() {
         let ww = $(window).width();
-        let circleww = $('.column ul').width();
-
-        if (ww > 1200) {
+        
+        if (ww > 1184) {
+            let circleww = $('.column ul').width();
             let circleArrow = ((circleww - 1000) / 3) / 3;
 
             $('.column ul li > span').css('left', 'calc(100% + ' + circleArrow + 'px)');
-        } else if (ww > 767 && ww <= 1200) {
-            let circleArrow = ((circleww - 800) / 3) / 3;
+        } else if (ww > 767 && ww <= 1184) {
+            let circleww = $('.column ul').width();
+            let circleArrow = ((circleww - 720) / 3) / 3;
             
             $('.column ul li > span').css('left', 'calc(100% + ' + circleArrow + 'px)');
         } else {

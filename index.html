@@ -56,29 +56,32 @@
 <body>
 
     <header>
-        <div class="header_inner">````
+        <div class="header_inner">
             <h1 class="logo"><a href="#;"><img src="assets/img/common/logo.svg" alt="Logo"> </a></h1>
-            <a href="#;" class="text_logo"><img src="assets/img/common/text_logo.png" alt="Txtlogo"></a>
             <button id="gnb_btn">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
         </div>
+
+        <div class="overlay_bg"></div>
         <nav>
             <div class="nav_inner">
-                <ul class="gnb">
-                    <li><a href="#;">Home</a></li>
-                    <li><a href="#;">Culture</a></li>
-                    <li><a href="#;">Recruit</a></li>
-                    <li><a href="#;">Contact us</a></li>
-                </ul>
+                <div class="inner">
+                    <ul class="gnb">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="culture.html">Culture</a></li>
+                        <li><a href="recruit.html">Recruit</a></li>
+                        <li><a href="project.html">Contact us</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
     <section class="section visual_main">
-        <div class="swiper mySwiper">
+        <div class="swiper MainSwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="slide_pos">
@@ -225,10 +228,18 @@
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="slide_pos">
+                    <div class="slide_bg">
                         <div class="slide_overlay"></div>
-                        <div class="slide_img">
-                            <img src="assets/img/layout/main/own_work1.jpg" alt="img">
+                        <div class="container">
+                            <div class="slide_con">
+                                <div class="txt_box">
+                                    <span>Rorem Ipsum</span>
+                                    <h3>Rorem Ipsum</h3>
+                                </div>
+                                <div class="img_box">
+                                    <img src="./assets/img/layout/main/own_work_img01.png" alt="img">
+                                </div>
+                            </div>
                         </div>
                         <div class="slide_desc">
                             <span>모두의 깐부</span>
@@ -236,22 +247,40 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide_pos">
+                    <div class="slide_bg">
                         <div class="slide_overlay"></div>
-                        <div class="slide_img">
-                            <img src="assets/img/layout/main/own_work2.jpg" alt="img">
+                        <div class="container">
+                            <div class="slide_con">
+                                <div class="txt_box">
+                                    <span>Rorem Ipsum</span>
+                                    <h3>Rorem Ipsum</h3>
+                                </div>
+                                <div class="img_box">
+                                    <img src="./assets/img/layout/main/own_work_img02.png" alt="img">
+                                </div>
+                            </div>
                         </div>
+                        
                         <div class="slide_desc">
                             <span>모두의 방역</span>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide_pos">
+                    <div class="slide_bg">
                         <div class="slide_overlay"></div>
-                        <div class="slide_img">
-                            <img src="assets/img/layout/main/own_work3.jpg" alt="img">
+                            <div class="container">
+                            <div class="slide_con">
+                                <div class="txt_box">
+                                    <span>Rorem Ipsum</span>
+                                    <h3>Rorem Ipsum</h3>
+                                </div>
+                                <div class="img_box">
+                                    <img src="./assets/img/layout/main/own_work_img03.png" alt="img">
+                                </div>
+                            </div>
                         </div>
+                        
                         <div class="slide_desc">
                             <span>올리브유 체험단</span>
                         </div>
@@ -343,7 +372,7 @@
     <script src="assets/js/plugin/swiper-bundle.min.js"></script>
 
     <script>
-        var swiper = new Swiper(".mySwiper", {
+        var swiper = new Swiper(".MainSwiper", {
             slidesPerView: 1,
             cssMode: true,
             loop: false,
@@ -353,7 +382,19 @@
             },
             pagination: {
                 el: ".swiper-pagination",
-                clickable: true,
+                clickable: true
+            },
+            mousewheel: true,
+            keyboard: true,
+        });
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            cssMode: true,
+            loop: false,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
             mousewheel: true,
             keyboard: true,

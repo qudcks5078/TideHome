@@ -223,9 +223,9 @@ section.culture_con02{
                     position:relative;
                     p{
                         position: absolute;
-                        top:20px; left:20px;
+                        top:15px; left:15px;
                         color:#fff;
-                        font-size: 20px;
+                        font-size: 16px;
                         font-family: $medium;
                         line-height:27px;
                         z-index:10;
@@ -260,6 +260,12 @@ section.culture_con02{
             display:block;
             > div{
                 width:100%;
+                > div{
+                    p{
+                        top:15px; left:15px;
+                        font-size: 16px;
+                    }
+                }
             }
             .left_box{
                 display:block;

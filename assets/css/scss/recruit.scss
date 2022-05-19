@@ -161,6 +161,18 @@
                     }
                 }
             }
+
+         @media (min-width:767px) and (max-width:1200px){
+                .column {
+                    ul {
+                        li {
+                            span{
+                                display:none;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -179,14 +191,24 @@
                     ul {
                         li {
                             padding: 20px;
-                            width: 200px;
-                            height: 200px;
+                            width: 180px;
+                            height: 180px;
 
                             &:nth-child(1) > span,
                             &:nth-child(2) > span,
                             &:nth-child(3) > span {
                                 width: 22px;
                                 height: 30px;
+                            }
+                            div{
+                                dl{
+                                    dt{
+                                        font-size: 24px;
+                                    }
+                                    dd{
+                                        font-size: 18px;
+                                    }
+                                }
                             }
                         }
                     }
@@ -234,7 +256,6 @@
                             &:nth-child(2) > span,
                             &:nth-child(3) > span {
                                 transform: rotate(90deg) translate(-50%, -50%);
-                                // left: calc(50% - 21px);
                                 top: calc(100% + 30px);
                                 width: 21px;
                                 height: 30px;
@@ -254,11 +275,13 @@
                                     justify-content: center;
                                     width:100%;
                                     dt {
+                                        font-size: 24px;
                                         display: inline-block;
                                         width: auto;
                                     }
 
                                     dd {
+                                        font-size: 18px;
                                         display: inline-block;
                                         width:auto;
                                         padding:0 0 0 10px;

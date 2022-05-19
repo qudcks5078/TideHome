@@ -231,10 +231,10 @@ section.culture_con02 > div .left_box div {
   }
   section.culture_con02 > div > div > div p {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 15px;
+    left: 15px;
     color: #fff;
-    font-size: 20px;
+    font-size: 16px;
     font-family: "NSG M";
     line-height: 27px;
     z-index: 10;
@@ -271,6 +271,11 @@ section.culture_con02 > div .left_box div {
   }
   section.culture_con02 > div > div {
     width: 100%;
+  }
+  section.culture_con02 > div > div > div p {
+    top: 15px;
+    left: 15px;
+    font-size: 16px;
   }
   section.culture_con02 > div .left_box {
     display: block;
