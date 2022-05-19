@@ -11,15 +11,6 @@ $(document).ready(function () {
                     $(this).find('img').attr('src', imgSrc + (index + 1) + '.jpg');
                 }
             })
-
-            $('.section.own_work .swiper-slide').each(function (index) {
-                let imgSrc = 'assets/img/layout/main/own_work';
-                if (ww < 767) {
-                    $(this).find('img').attr('src', imgSrc + (index + 1) + '_mobile.jpg');
-                }else{
-                    $(this).find('img').attr('src', imgSrc + (index + 1) + '.jpg');
-                }
-            })
     }).resize();
 
     $(window).scroll(function () {
